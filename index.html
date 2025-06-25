@@ -2,59 +2,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tammy's Clean Team Dashboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean Team Dashboard</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: #f2f2f2;
     }
     header {
       background-color: #4CAF50;
+      padding: 20px;
       color: white;
       text-align: center;
-      padding: 1.5rem;
-    }
-    h1 {
-      margin: 0;
     }
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
     }
     .card {
       background-color: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       text-align: center;
-      transition: transform 0.2s ease;
     }
-    .card:hover {
-      transform: translateY(-5px);
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
     }
-    .card a {
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .card a.button {
       display: inline-block;
-      margin-top: 1rem;
-      text-decoration: none;
+      padding: 10px 20px;
       background-color: #4CAF50;
       color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
+      text-decoration: none;
       font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .card a.button:hover {
+      background-color: #45a049;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background-color: #eee;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
@@ -63,46 +69,34 @@
     <h1>Tammy's Clean Team Dashboard</h1>
     <p>Access all your tools and resources in one place</p>
   </header>
-
   <div class="container">
     <div class="card">
       <h2>Quote Request Form</h2>
       <p>Send quotes directly to the team.</p>
-      <a href="https://johnniesue.github.io/the-clean-team-site/quote.html" target="_blank">Open Form</a>
+      <a class="button" href="https://johnniesue.github.io/the-clean-team-site/quote.html" target="_blank">Open Form</a>
     </div>
-
     <div class="card">
       <h2>Cleaning Checklist App</h2>
       <p>Use this for standard and deep clean walkthroughs.</p>
-      <a href="https://johnniesue.github.io/the-clean-team-site/" target="_blank">Open Checklist</a>
+      <a class="button" href="https://johnniesue.github.io/the-clean-team-site/" target="_blank">Open Checklist</a>
     </div>
-
     <div class="card">
-      <h2>Downloadable PDFs</h2>
-      <p>Print or view checklists and documents.</p>
-      <a href="https://your-pdf-link.com" target="_blank">View PDFs</a>
+      <h2>Employee Training Materials</h2>
+      <p>Download your Residential & Commercial Cleaning training checklist here.</p>
+      <a class="button" href="#" target="_blank">Download Training PDF</a>
     </div>
-
-    <div class="card">
-      <h2>Training Instructions</h2>
-      <p>How to use each tool and feature.</p>
-      <a href="https://your-training-page.com" target="_blank">View Instructions</a>
-    </div>
-
     <div class="card">
       <h2>The Clean Team Website</h2>
       <p>Visit the main site for services and information.</p>
-      <a href="https://the-clean-team.com" target="_blank">Visit Website</a>
+      <a class="button" href="https://the-clean-team.com" target="_blank">Visit Website</a>
     </div>
-
     <div class="card">
       <h2>Email Access</h2>
       <p>Quick links to your inboxes:</p>
-      <a href="mailto:thecleanteamtx22@gmail.com" target="_blank">Open thecleanteamtx22@gmail.com</a><br><br>
-      <a href="mailto:tammylove540@gmail.com" target="_blank">Open tammylove540@gmail.com</a>
+      <a class="button" href="mailto:thecleanteamtx22@gmail.com">thecleanteamtx22@gmail.com</a><br><br>
+      <a class="button" href="mailto:tammylove540@gmail.com">tammylove540@gmail.com</a>
     </div>
   </div>
-
   <footer>
     &copy; 2025 The Clean Team | Created for Tammy Love
   </footer>
